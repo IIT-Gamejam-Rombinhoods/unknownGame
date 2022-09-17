@@ -1,5 +1,8 @@
 //Set Variables
 vsp = vsp + grv;
+//key_bigEnemy = keyboard_check_pressed("K")
+
+
 
 //Handle Collisions
 if (place_meeting(x+hsp,y,oBlock))
