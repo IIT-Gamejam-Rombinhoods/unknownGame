@@ -19,8 +19,6 @@
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"PositionBoxes","instances":[],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Foreground_Objects","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_76A44A03","properties":[],"isDnd":false,"objectId":{"name":"oFinish","path":"objects/oFinish/oFinish.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":7552.0,"y":1632.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_15DADBCB","properties":[],"isDnd":false,"objectId":{"name":"oHPBorder","path":"objects/oHPBorder/oHPBorder.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":5.0,"scaleY":5.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":736.0,"y":576.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_637F77FD","properties":[],"isDnd":false,"objectId":{"name":"oHPBar","path":"objects/oHPBar/oHPBar.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":768.0,"y":704.0,},
       ],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Powerups","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_69666CD0","properties":[],"isDnd":false,"objectId":{"name":"oPowerUp","path":"objects/oPowerUp/oPowerUp.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1440.0,"y":576.0,},
@@ -391,8 +389,6 @@
     {"name":"inst_57E0856A","path":"rooms/Level1/Level1.yy",},
     {"name":"inst_6722F977","path":"rooms/Level1/Level1.yy",},
     {"name":"inst_76A44A03","path":"rooms/Level1/Level1.yy",},
-    {"name":"inst_15DADBCB","path":"rooms/Level1/Level1.yy",},
-    {"name":"inst_637F77FD","path":"rooms/Level1/Level1.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

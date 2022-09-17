@@ -1,20 +1,12 @@
-if (stun == 0) {
-	image_speed = 1;
+if (stun <= 0) {
+	mask_index = sEnemyAtkHB;
+	if (instance_position(x, y, oPlayer) != noone) state = ENEMYSTATE.ATTACK;
+	mask_index = sEnemyIdle;
 	
-	//Animation
-	if (place_meeting(x,y+1,oBlock)){
-		image_speed = 1;
-		if(hsp == 0){
-			sprite_index = sEnemyIdle;
-		}
-		else{
-			sprite_index = sEnemyRun;
-		}
-	}
-	else {
-		sprite_index = sEnemyInAir;
-		image_speed = 0;
-		if (sign(vsp) > 0) image_index = 1; else image_index = 0;
+	switch (state)
+	{
+		case ENEMYSTATE.FREE: EnemyState_Free(); break;
+		case ENEMYSTATE.ATTACK: EnemyState_Atk(); break;
 	}
 }
 else {
@@ -23,30 +15,7 @@ else {
 		vsp = 0;
 	}
 	stun -= 1;
+	vsp = vsp + grv;
+	x += hsp;
+	y += vsp;
 }
-
-//Set Variables
-vsp = vsp + grv;
-hsp = walksp;
-
-//Handle Collisions
-if (place_meeting(x+hsp,y,oBlock))
-{
-	while(!place_meeting(x+sign(hsp),y,oBlock))
-	{
-		x = x + sign(hsp);	
-	}
-	hsp = -hsp;
-}
-if (place_meeting(x,y+vsp,oBlock))
-{
-	while(!place_meeting(x,y+sign(vsp),oBlock))
-	{
-		y = y + sign(vsp);	
-	}
-	vsp = 0;
-}
-
-//Move
-x = x + hsp;
-y = y + vsp;

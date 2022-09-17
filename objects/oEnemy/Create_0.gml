@@ -14,9 +14,8 @@ stun = 0;
 flash = 0;
 hp = hp_max;
 hitFrom = 0;
-
-state = ENEMYSTATE.FREE;
 hitByAttack = ds_list_create();
+state = ENEMYSTATE.FREE;
 
 enum ENEMYSTATE{
 	FREE,
