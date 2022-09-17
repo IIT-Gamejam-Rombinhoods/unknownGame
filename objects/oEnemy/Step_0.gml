@@ -1,5 +1,33 @@
+if (stun == 0) {
+	image_speed = 1;
+	
+	//Animation
+	if (place_meeting(x,y+1,oBlock)){
+		image_speed = 1;
+		if(hsp == 0){
+			sprite_index = sEnemyIdle;
+		}
+		else{
+			sprite_index = sEnemyRun;
+		}
+	}
+	else {
+		sprite_index = sEnemyInAir;
+		image_speed = 0;
+		if (sign(vsp) > 0) image_index = 1; else image_index = 0;
+	}
+}
+else {
+	if (place_meeting(x,y+1,oBlock) && vsp > 0) {
+		hsp = 0;
+		vsp = 0;
+	}
+	stun -= 1;
+}
+
 //Set Variables
 vsp = vsp + grv;
+hsp = walksp;
 
 //Handle Collisions
 if (place_meeting(x+hsp,y,oBlock))
@@ -22,19 +50,3 @@ if (place_meeting(x,y+vsp,oBlock))
 //Move
 x = x + hsp;
 y = y + vsp;
-
-//Animation
-if (place_meeting(x,y+1,oBlock)){
-	image_speed = 1;
-	if(hsp == 0){
-		sprite_index = sEnemyIdle;
-	}
-	else{
-		sprite_index = sEnemyRun;
-	}
-}
-else {
-	sprite_index = sEnemyInAir;
-	image_speed = 0;
-	if (sign(vsp) > 0) image_index = 1; else image_index = 0;
-}	
