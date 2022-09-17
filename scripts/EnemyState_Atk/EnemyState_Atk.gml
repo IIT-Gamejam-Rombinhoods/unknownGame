@@ -18,17 +18,25 @@ function EnemyState_Atk(){
 	
 	//Use attack hitbox & check for hits
 	mask_index = sEnemyAtkHB;
-	hitID = instance_position(x,y,oPlayer);
-	with (hitID) {
-		if (other.hitID != noone && !other.player_hit) {
-			PlayerHit(1);
-			other.player_hit = true;
+	var hitByAttackNow = ds_list_create();
+	var hits = instance_place_list(x,y,oPlayer,hitByAttackNow, false);
+	if (hits > 0) {
+		for (var i = 0; i < hits; i++) {
+			var hitID = hitByAttackNow[| i];
+			if (ds_list_find_index(hitByAttack, hitID) == -1) {
+				ds_list_add(hitByAttack, hitID);
+				with (hitID) {
+					PlayerHit(1);	
+				}
+			}
 		}
 	}
+	ds_list_destroy(hitByAttackNow);
 	mask_index = sEnemyIdle;
 	
 	if (animationEnd()) {
 		sprite_index = sEnemyIdle;
 		state = ENEMYSTATE.FREE;
+		player_hit = false;
 	}
 }

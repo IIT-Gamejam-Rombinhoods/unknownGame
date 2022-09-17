@@ -3,7 +3,6 @@
 function EnemyState_Free(){
 	//Set Variables
 	vsp = vsp + grv;
-	hsp = walksp;
 	image_speed = 1;
 	player_hit = false;
 	
@@ -12,6 +11,7 @@ function EnemyState_Free(){
 		image_speed = 1;
 		if(hsp == 0){
 			sprite_index = sEnemyIdle;
+			hsp = walksp;
 		}
 		else{
 			sprite_index = sEnemyRun;
@@ -19,8 +19,7 @@ function EnemyState_Free(){
 	}
 	else {
 		sprite_index = sEnemyInAir;
-		image_speed = 0;
-		if (sign(vsp) > 0) image_index = 1; else image_index = 0;
+		image_index = 0;
 	}
 	
 	//Handle Collisions
