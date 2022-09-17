@@ -11,7 +11,7 @@ function PlyrState_Dying(){
 		is_dying = false;
 		x = oStart.x;
 		y = oStart.y;
-		hp = 4;
+		hp = hp_max;
 		state = PLAYERSTATE.FREE;
 	}
 }

@@ -11,12 +11,15 @@ if (place_meeting(x,y,oFinish)) {
 if (y > room_width) {
 	x = oStart.x;
 	y = oStart.y;
-	hp = 4;
+	hp = hp_max;
 }
 
 if (hp <= 0) {
 	state = PLAYERSTATE.DYING;
 }
+
+hp_bar_x = x;
+hp_bar_y = y;
 
 switch (state)
 {

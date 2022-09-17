@@ -4,5 +4,5 @@ function PlayerHit(argument0){
 	var _damage = argument0;
 	
 	hp -= _damage;
-	flash = 3;
+	flash = flash_length;
 }
