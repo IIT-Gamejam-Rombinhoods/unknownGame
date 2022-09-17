@@ -3,6 +3,7 @@
   "resourceVersion": "1.6",
   "name": "RobinhoodsGame",
   "resources": [
+    {"id":{"name":"Sprite27","path":"sprites/Sprite27/Sprite27.yy",},"order":25,},
     {"id":{"name":"sGrass","path":"sprites/sGrass/sGrass.yy",},"order":2,},
     {"id":{"name":"backgroundTwo","path":"sprites/backgroundTwo/backgroundTwo.yy",},"order":18,},
     {"id":{"name":"sPlyrAtkHB","path":"sprites/sPlyrAtkHB/sPlyrAtkHB.yy",},"order":4,},
