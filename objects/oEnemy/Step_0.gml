@@ -10,12 +10,12 @@ if (stun <= 0) {
 	}
 }
 else {
+	vsp = vsp + grv;
 	if (place_meeting(x,y+1,oBlock) && vsp > 0) {
 		hsp = 0;
 		vsp = 0;
 	}
 	stun -= 1;
-	vsp = vsp + grv;
 	x += hsp;
 	y += vsp;
 }

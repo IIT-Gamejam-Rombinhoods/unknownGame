@@ -3,7 +3,9 @@
 function EnemyState_Free(){
 	//Set Variables
 	vsp = vsp + grv;
+	hsp = walksp;
 	image_speed = 1;
+	player_hit = false;
 	
 	//Animation
 	if (place_meeting(x,y+1,oBlock)){
@@ -29,6 +31,7 @@ function EnemyState_Free(){
 			x = x + sign(hsp);	
 		}
 		hsp = -hsp;
+		image_xscale = -image_xscale;
 	}
 	if (place_meeting(x,y+vsp,oBlock))
 	{

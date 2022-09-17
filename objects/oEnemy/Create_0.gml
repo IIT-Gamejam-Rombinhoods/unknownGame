@@ -10,6 +10,7 @@ knockback = 5;
 
 image_speed = 1;
 
+player_hit = false;
 stun = 0;
 flash = 0;
 hp = hp_max;
