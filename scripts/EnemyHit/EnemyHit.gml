@@ -10,6 +10,8 @@ function EnemyHit(argument0, argument1){
 	stun = stun_length;
 	hsp = knockback * _direction;
 	vsp = knockback * -1;
-	image_xscale = 2 * _direction;
+	image_xscale = scale * _direction;
 	image_speed = 0;
+	sprite_index = sEnemyIdle;
+	state = ENEMYSTATE.FREE;
 }

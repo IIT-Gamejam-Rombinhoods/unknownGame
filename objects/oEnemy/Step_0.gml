@@ -1,7 +1,12 @@
 if (stun <= 0) {
 	mask_index = sEnemyAtkHB;
-	if (instance_position(x, y, oPlayer) != noone) state = ENEMYSTATE.ATTACK;
+	var prev_image = image_index;
+	mask_index = 3;
+	if (instance_position(x + (100 * sign(image_xscale)), y, oPlayer) != noone) {
+		state = ENEMYSTATE.ATTACK;
+	}
 	mask_index = sEnemyIdle;
+	image_index = prev_image;
 	
 	switch (state)
 	{

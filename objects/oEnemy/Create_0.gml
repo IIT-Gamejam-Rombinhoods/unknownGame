@@ -7,7 +7,10 @@ hp_max = 3;
 flash_length = 3;
 stun_length = 30;
 knockback = 5;
+scale = 0.3;
 
+image_xscale = scale;
+image_yscale = scale;
 image_speed = 1;
 
 player_hit = false;
