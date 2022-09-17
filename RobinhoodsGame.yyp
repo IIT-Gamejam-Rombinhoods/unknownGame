@@ -6,13 +6,11 @@
     {"id":{"name":"sGrass","path":"sprites/sGrass/sGrass.yy",},"order":2,},
     {"id":{"name":"backgroundTwo","path":"sprites/backgroundTwo/backgroundTwo.yy",},"order":18,},
     {"id":{"name":"sPlyrAtkHB","path":"sprites/sPlyrAtkHB/sPlyrAtkHB.yy",},"order":4,},
-<<<<<<< HEAD
     {"id":{"name":"EnemyState_Atk","path":"scripts/EnemyState_Atk/EnemyState_Atk.yy",},"order":8,},
-=======
     {"id":{"name":"sCrate","path":"sprites/sCrate/sCrate.yy",},"order":22,},
->>>>>>> db8a23eff33a8782a55650d3d1fe08cf63028aff
     {"id":{"name":"oCastleBricks","path":"objects/oCastleBricks/oCastleBricks.yy",},"order":9,},
     {"id":{"name":"sPlyrLand","path":"sprites/sPlyrLand/sPlyrLand.yy",},"order":7,},
+    {"id":{"name":"Level2","path":"rooms/Level2/Level2.yy",},"order":4,},
     {"id":{"name":"sCarpet","path":"sprites/sCarpet/sCarpet.yy",},"order":24,},
     {"id":{"name":"sEnemyRun","path":"sprites/sEnemyRun/sEnemyRun.yy",},"order":5,},
     {"id":{"name":"PlyrState_Free","path":"scripts/PlyrState_Free/PlyrState_Free.yy",},"order":0,},
@@ -63,6 +61,7 @@
     {"id":{"name":"sPlyrIdle","path":"sprites/sPlyrIdle/sPlyrIdle.yy",},"order":1,},
     {"id":{"name":"oPowerUp","path":"objects/oPowerUp/oPowerUp.yy",},"order":5,},
     {"id":{"name":"sPlyrJump","path":"sprites/sPlyrJump/sPlyrJump.yy",},"order":6,},
+    {"id":{"name":"Level1","path":"rooms/Level1/Level1.yy",},"order":0,},
   ],
   "Options": [
     {"name":"Android","path":"options/android/options_android.yy",},
@@ -83,6 +82,8 @@
   },
   "RoomOrderNodes": [
     {"roomId":{"name":"Menu","path":"rooms/Menu/Menu.yy",},},
+    {"roomId":{"name":"Level1","path":"rooms/Level1/Level1.yy",},},
+    {"roomId":{"name":"Level2","path":"rooms/Level2/Level2.yy",},},
     {"roomId":{"name":"Level3","path":"rooms/Level3/Level3.yy",},},
     {"roomId":{"name":"Finish","path":"rooms/Finish/Finish.yy",},},
     {"roomId":{"name":"Credits","path":"rooms/Credits/Credits.yy",},},
@@ -111,6 +112,6 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2022.8.0.34",
+    "IDEVersion": "2022.8.1.37",
   },
 }
