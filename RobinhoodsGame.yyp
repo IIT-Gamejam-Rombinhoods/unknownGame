@@ -50,6 +50,7 @@
     {"id":{"name":"sEnemyDead","path":"sprites/sEnemyDead/sEnemyDead.yy",},"order":14,},
     {"id":{"name":"oGrass","path":"objects/oGrass/oGrass.yy",},"order":10,},
     {"id":{"name":"sHealthBar","path":"sprites/sHealthBar/sHealthBar.yy",},"order":21,},
+    {"id":{"name":"finishBackground","path":"sprites/finishBackground/finishBackground.yy",},"order":26,},
     {"id":{"name":"Credits","path":"rooms/Credits/Credits.yy",},"order":6,},
     {"id":{"name":"backgroundThree","path":"sprites/backgroundThree/backgroundThree.yy",},"order":19,},
     {"id":{"name":"oHPBorder","path":"objects/oHPBorder/oHPBorder.yy",},"order":11,},
